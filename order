@@ -1,0 +1,4 @@
+pdftk doc.pdf cat oddwest output docodd.pdf
+pdftk doc.pdf cat eveneast output doceven.pdf
+pdftk A=docodd.pdf B=doceven.pdf shuffle A B output doc1.pdf
+pdftk doc1.pdf cat end-1 output doc2.pdf
